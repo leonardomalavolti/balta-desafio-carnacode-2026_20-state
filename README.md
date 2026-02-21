@@ -2,7 +2,7 @@
 
 ## 🥁 CarnaCode 2026 - Desafio 20 - State
 
-Oi, eu sou o [seu nome aqui] e este é o espaço onde compartilho minha jornada de aprendizado durante o desafio **CarnaCode 2026**, realizado pelo [balta.io](https://balta.io). 👻
+Oi, eu sou o Leonardo Malavolti Monteiro e este é o espaço onde compartilho minha jornada de aprendizado durante o desafio **CarnaCode 2026**, realizado pelo [balta.io](https://balta.io). 👻
 
 Aqui você vai encontrar projetos, exercícios e códigos que estou desenvolvendo durante o desafio. O objetivo é colocar a mão na massa, testar ideias e registrar minha evolução no mundo da tecnologia.
 
@@ -16,6 +16,13 @@ Neste processo eu aprendi:
 
 ## Problema
 Um pedido passa por múltiplos estados (Pendente, Pago, Enviado, Entregue, Cancelado) e cada estado permite operações diferentes. O código atual usa condicionais gigantes que verificam o estado atual antes de cada operação, tornando difícil adicionar novos estados.
+
+## Solução com State
+- Cada estado encapsula comportamento próprio (Pending, Paid, Shipped, Delivered, Cancelled, Returned)
+- Pedido (Order) delega operações ao estado atual
+- Eliminadas grandes estruturas switch/case
+- Permite adicionar novos estados sem alterar código existente
+- Transições de estado explícitas e consistentes
 
 ## Sobre o CarnaCode 2026
 O desafio **CarnaCode 2026** consiste em implementar todos os 23 padrões de projeto (Design Patterns) em cenários reais. Durante os 23 desafios desta jornada, os participantes são submetidos ao aprendizado e prática na idetinficação de códigos não escaláveis e na solução de problemas utilizando padrões de mercado.
